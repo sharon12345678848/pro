@@ -1,0 +1,36 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="assets/images/pic1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Technology</h5>
+    <p class="card-text">Technology has changed the human life in every aspect and increases the threat of life and making humans as numb guys.</p>
+    <a href="#" class="btn btn-primary">Tech</a>
+  </div>
+</div>
+<button (click)="toggle =! toggle">Toggle Greatings </button>
+<div *ngIf="toggle">
+  <h1>Neeraja Sanagala</h1>
+  <p>
+    Neeraja Is CSA Topper <br>
+    Aswitha Is CSA Topper <br>
+    Sharon Is CSA Topper <br>
+    Tarun Is CSA Topper <br>
+    Tabasum Is CSA Topper <br>
+    Pavani Is CSA Topper <br>
+  </p>
+ <button (click)="plus()">click me for Increment</button>&nbsp; 
+ <p [ngStyle]="style">Sharon Roja </p>
+  <button (click)="minus()">click me for Increment</button>
+  
+</div>
+Worklocation preferred
+<input type="text" [(ngModel)]="worklocation">
+<button (click)="default()">select Any</button>
+<br><br>
+{{worklocation}}
+/*<form>
+  <label>user name</label>
+  <input type ="text" [(ngModel)]="username" placeholder="enter ur name"><br>
+</form>*/
+<div *ngFor = "let row of fetchdata">
+  {{row}}
+</div>
